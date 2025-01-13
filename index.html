@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="https://image.pollinations.ai/prompt/gay" alt="ai img" class="image">
+    <div class="ai_question">
+        <h2 id="title" class="question_title">Enter question</h2> 
+        <input type="text" id="text_input" class="question_text_input"/>
+        <input type="button" id="send_btn" class="question_button" value="Send request" onclick="fire_ai_question()"/>
+        <h2 id="output" class="question_output"></h2>
+    </div>
 </body>
+    <script src="script.js"></script>   
 </html>
