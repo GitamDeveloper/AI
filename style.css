@@ -45,6 +45,8 @@ body{
     font-size: 1vw;
 
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
+
+    
 }
 
 .question_text_input{
@@ -111,4 +113,29 @@ body{
     position: absolute;
 
     font-size: 1vw;
+}
+
+@media (max-width: 750px) {
+    
+    .question_title, .question_text_input, .question_button, .question_output{
+        width: 30vw;
+        height: 10vh;
+
+        font-size: 4vw;
+    }
+
+    .question_button{
+        margin-left: 40vw;
+        margin-bottom: 30vh;
+    }
+
+    .question_text_input{
+        margin-right: 40vw;
+        margin-bottom: 30vh;
+    }
+
+    .question_output{
+        margin-bottom: 0vh;
+    }
+
 }
