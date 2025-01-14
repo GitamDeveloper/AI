@@ -7,10 +7,19 @@
 </head>
 <body>
     <div class="ai_question">
-        <h2 id="title" class="question_title">Enter question</h2> 
+        <!-- <div class="title_box"> -->
+            <h2 id="title" class="question_title">Enter text</h2> 
+        <!-- </div> -->
         <input type="text" id="text_input" class="question_text_input"/>
         <input type="button" id="send_btn" class="question_button" value="Send request" onclick="fire_ai_question()"/>
         <h2 id="output" class="question_output"></h2>
+
+        <div class="setting">
+            <input type="radio" id="text_radio_answer" class="question_radio_answer" value="answer mode" name = "text_radio" onclick="fire_ai_radio_1()"/>
+            <input type="radio" id="text_radio_edit" class="question_radio_edit" value="answer edit" name = "text_radio" onclick="fire_ai_radio_2()"/>
+            <h3 class="question_radio_answer_h">answer mode</h3>
+            <h3 class="question_radio_edit_h">edit mode</h3>
+        </div>
     </div>
 </body>
     <script src="script.js"></script>   
